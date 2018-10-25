@@ -64,7 +64,7 @@ class Game extends React.PureComponent {
     }
 
     getDescriptionForMove(move) {
-        return move === 0 ? 'Go to move #' + move : 'Go to game start';
+        return move !== 0 ? 'Go to move #' + move : 'Go to game start';
     }
 
     jumpTo(step) {
